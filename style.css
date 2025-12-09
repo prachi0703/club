@@ -1,0 +1,141 @@
+/* COMMON STYLES */
+* { box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #072c5f;
+  color: #fff;
+  padding: 14px 20px;
+  overflow: auto;
+}
+.logo { float: left; font-size: 20px; font-weight: 700; letter-spacing: 0.6px; }
+.menu { float: right; }
+.menu a { color: #fff; text-decoration: none; margin-left: 18px; font-weight: 600; }
+.menu a:hover, .menu a.active { text-decoration: underline; }
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #072c5f;
+  background-color: #dbe9ff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+.hero-content { position: relative; z-index: 1; max-width: 900px; }
+.hero h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #004aad;
+}
+.hero p { font-size: 18px; color: #222; line-height: 1.6; margin-top: 8px; }
+.hero-img { width: 220px; margin-top: 20px; border-radius: 10px; border: 2px solid #004aad; }
+
+/* ABOUT SECTION */
+.about-section { background:palegoldenrod; padding: 40px 0; }
+.about-box {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #004aad;
+  color: #ff6b6b;
+}
+.heading-decor {
+  font-size: 32px;
+  font-weight: 800;
+  color: #072c5f;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.heading-decor::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(90deg, #004aad, #00c3ff);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+.about-text { font-size:18px; color :#00c3ff; line-height:1.7; margin-top:16px; margin-bottom:22px; }
+.about-img { width:260px; border-radius:10px; margin-top:20px; }
+
+/* EVENTS SECTION */
+.events-section { max-width: 1200px; margin: 40px auto; padding: 0 20px; text-align: center; }
+.events-section h2 { font-size: 32px; color:#072c5f; margin-bottom:30px; font-weight:700; }
+.events-container { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
+.event-card {
+  flex:1 1 300px;
+  max-width:320px;
+  padding:22px;
+  border-radius:16px;
+  color:white;
+  text-align:left;
+  box-shadow:0 8px 25px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.event-card:hover { transform:translateY(-8px); box-shadow:0 12px 35px rgba(0,0,0,0.2); }
+.event-card h3 { margin-top:0; margin-bottom:12px; font-size:22px; color:#fff; }
+.event-card p { font-size:15px; line-height:1.6; color:#f0f0f0; }
+
+/* Gradient Colors */
+.card1 { background: linear-gradient(135deg, #6a5acd, #836fff); }
+.card2 { background: linear-gradient(135deg, #ff6b6b, #ff8787); }
+.card3 { background: linear-gradient(135deg, #20c997, #38e1b7); }
+
+/* JOIN FORM */
+.form-container {
+  width: 420px; max-width:94%;
+  margin:30px auto 60px;
+  background:#fff;
+  padding:22px;
+  border-radius:10px;
+  border:2px solid #004aad;
+}
+.form-container h2 { margin:0 0 12px; color:#072c5f; }
+.form-row { margin-top:12px; }
+.form-row input, .form-row select { width:100%; padding:10px 12px; font-size:15px; border:1px solid #cbd5e1; border-radius:6px; }
+.form-row label { display:block; font-size:13px; margin-bottom:6px; color:#333; }
+.form-button {
+  margin-top:16px;
+  width:100%;
+  padding:11px;
+  font-weight:700;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:linear-gradient(90deg,#0760d8,#004aad);
+  color:rgb(255, 255, 255);
+  font-size:16px;
+}
+.form-note { font-size:13px; color:#666; margin-top:10px; text-align:center; }
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{ font-size:28px; }
+  .hero p{ font-size:16px; }
+  .hero-img{ width:160px; }
+  .about-box{ width:92%; }
+  .menu, .logo{ float:none; text-align:center; margin-top:10px; }
+}
